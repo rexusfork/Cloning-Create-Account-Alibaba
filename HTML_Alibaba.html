@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sign-up</title>
+        <link rel="stylesheet" href="CSS_Alibaba.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+</html>
+
+<body>
+    <nav>
+        <img src="./img/Alibaba-brand.png" class="brand">
+        <ul>
+            <div class="lang">
+                <ul>
+                    <li><a href="#"><ion-icon name="earth-outline"></ion-icon></a></li>
+                    <li><a href="#">intl - English</a></li>
+                    <li><a href="#"><ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                </ul>
+            </div>
+            <li><a href="#">Homepage</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <img src="./img/ads.png" class="ads">
+
+    <div class="contents">
+        <div class="card">
+            <div class="sign-up">
+                <div class="input-country">
+                    <select id="Countries" name="countries">
+                        <option value="" selected="selected">Indonesia</option>
+                        <option value="" selected="selected">Amerika Serikat</option>
+                        <option value="" selected="selected">Malaysia</option>
+                        <option value="" selected="selected">Rusia</option>
+                        <option value="" selected="selected">Thailand</option>
+                        <option value="" selected="selected">Vietnam</option>
+                        <option value="" selected="selected">Yunani</option>
+                    </select>
+                </div>            
+                <div class="warning">
+                    <ion-icon name="alert-circle-outline" class="pic_1"></ion-icon>
+                    <a class="text-warning">
+                    Country and region will be used for currency and tax purposes and cannot be changed after registration
+                    </a>
+                </div>
+
+                <div class="input-data">
+                    <input type="email" placeholder="Enter your email" id="email">
+                    <div class="underline"></div>
+                    <span id="error_email" class="vali"></span>
+                </div>
+
+                <div class="input-data">
+                    <input type="password" placeholder="Enter your password" id="password">
+                    <div class="underline"></div>
+                    <span id="error_password" class="vali"></span>
+                </div>
+
+                <div class="input-data">
+                    <input type="password" placeholder="Confirm your password" id="confirm_password">
+                    <div class="underline"></div>
+                    <span id="error_passconfirm" class="vali"></span>
+                </div>
+
+                <div class="term_">
+                    <input type="checkbox" id="agreement" onchange="agree()">
+                    <label for="term">
+                    <a class="text-none">i hereby agree to the Alibaba Cloud Internasional Website <a href="#" class="text-term">Membership Aggreement, Privacy Policy, Product Terms</a><a class="text-none"> and </a><a href="#" class="text-term">Term of Use</a><a class="text-none"> under which i am contracting with Alibaba Cloud(Singapore) Private Limited.</a></a>
+                    </label>
+                </div>
+
+                <div class="login-button">
+                    <button onclick="validation()" id="submit" disabled>Confirm</button>
+                </div>
+
+                <div class="no-account">
+                    <a class="text-none">Already a member?<a href="#" class="text-term">Sign-in</a>
+                </div>
+            </div>
+        </div>
+        <div class="promotion">
+            <a class="Promotion-1">Account Benefit & Registration Tips<br/></a>
+            <a class="promotion-2">Free Trial<br/></a>
+            <a class="promotion-3">Get free hands on experience with 50+ product.<br/> Now up to 12 month for Elastic Computer Service!<br/></a>
+            <a class="promotion-2">Premium Support Service<br/></a>
+            <a class="promotion-4">1-on-1 pre-sale consultation </a>
+            <a class="promotion-3">24/7 affter-sales<br/>techical support with 6 free ticket per quarter<br/></a>
+            <a class="promotion-2">How do i select the country or region of my account?<br/></a>
+            <a class="promotion-3">For enterprise customers, please select the<br/>account registration country/region based on<br/>your business license. if not, you may be<br/>unable to obtain the correct invoice for tax<br/>deduction, and may not be eligible for your<br/>local tax free policy, or may even be unable to<br/>pay for the invoice</a>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal</li>
+            <li>Notice List</li>
+        </ul>
+        <div class="text-foot">
+            <a class="text-footer1">Alibaba  Group  Taobao  Marketplace  Tmall  Juhuasuan  AliExpress  Alibaba.com  1688  Alimama  Alltrip  YunOS  AliTelecon  AutoNavi  UCWeb  Umeng  Xiami  DingTalk  Alipay <br/></a>
+            <a class="text-footer2">@2019-2021  Copyright  by  Alibaba  Cloud  All  rights  reserved</a>
+        </div>
+    </footer>
+    <script src="./JavaScript_Alibaba.js"></script>
+</body>
